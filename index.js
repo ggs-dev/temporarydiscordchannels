@@ -3,7 +3,7 @@ const bot = new Discord.Client;
 
 bot.on("voiceStateUpdate", (oldState, newState) => {
     
-    //Checking users new voice channel state and if the left channel has 0 members left.
+    // Checking users new voice channel state and if the left channel has 0 members left.
   
     if(newState.channel == null){
       let leftChannel = newState.guild.channels.cache.find(c => c.name === `Personal Channel - ${oldState.channel.id}`)
@@ -32,7 +32,7 @@ bot.on("voiceStateUpdate", (oldState, newState) => {
         return channel.setName(`Personal Channel - ${channel.id}`)
        })
 
-      //Checking users old state      
+      // Checking users old state      
       } 
       if(oldState.channel == null) return;
       else if(newState.channel.name !== `Personal Channel - ${oldState.channel.id}`){
@@ -45,7 +45,7 @@ bot.on("voiceStateUpdate", (oldState, newState) => {
           } else return;
          } 
 
-      //Misc checks to make sure that muting their mic or streaming etc doesn't remove them from the channel
+      // Misc checks to make sure that muting their mic or streaming etc doesn't remove them from the channel
          if(newState.streaming == true){
             return;
          }else if (oldState.streaming == true) return;

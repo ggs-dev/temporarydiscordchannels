@@ -74,6 +74,7 @@ bot.on("voiceStateUpdate", (oldState, newState) => {
           return;
         }
 
+    // Final older state checking
         if(oldState.channel.name == `Personal Channel - ${oldState.channel.id}`){
         
           let leftChannel = oldState.guild.channels.cache.find(c => c.name === `Personal Channel - ${oldState.channel.id}`)

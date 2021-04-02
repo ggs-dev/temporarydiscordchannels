@@ -1,6 +1,8 @@
 # Temporary Discord Channels
 ### Using Discord.js (V12)
 
+#### Dependencies needed: Discord.JS (npm i discord.js)
+
 ##### I made this after it being requested to me, it wasn't easy trying to figure everything out but got there in the end and it works without any bugs.
 ##### A star is always appreciated.
 ##### I made this originally for GGS.SX

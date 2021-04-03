@@ -1,0 +1,28 @@
+{
+  "name": "temporarydiscordchannels",
+  "version": "1.0.0",
+  "description": "Chill's temporary Discord channels",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chxlls/temporarydiscordchannels.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "chxlls",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chxlls/temporarydiscordchannels/issues"
+  },
+  "homepage": "https://github.com/chxlls/temporarydiscordchannels#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}

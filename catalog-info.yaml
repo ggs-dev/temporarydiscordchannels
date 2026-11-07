@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: temporarydiscordchannels
+  title: temporarydiscordchannels
+  description: A temporary discord channel which will delete after everyone has left.
+  annotations:
+    github.com/project-slug: ggs-dev/temporarydiscordchannels
+  tags:
+    - javascript
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/developers
